@@ -2585,19 +2585,21 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\haith\\Documents\\Projects\\international-flvrs\\API\\API.csproj",
+      "projectUniqueName": "c:\\Users\\haith\\Documents\\Projects\\international-flvrs\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\haith\\Documents\\Projects\\international-flvrs\\API\\API.csproj",
+      "projectPath": "c:\\Users\\haith\\Documents\\Projects\\international-flvrs\\API\\API.csproj",
       "packagesPath": "C:\\Users\\haith\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\haith\\Documents\\Projects\\international-flvrs\\API\\obj\\",
+      "outputPath": "c:\\Users\\haith\\Documents\\Projects\\international-flvrs\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\haith\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\haith\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 using API.Extensions;
+using API.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace API
 {
@@ -26,6 +28,13 @@ namespace API
     {
 
         services.AddApplicationServices(_config);
+        
+         services.AddDbContext<DataContext>(options =>
+            {
+                options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
+            });
+
+
         services.AddControllers();
         services.AddCors();
         

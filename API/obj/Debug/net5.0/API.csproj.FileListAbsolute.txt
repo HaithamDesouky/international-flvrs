@@ -185,8 +185,6 @@ C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Micro
 C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Newtonsoft.Json.dll
-C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Npgsql.dll
-C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\SQLitePCLRaw.batteries_v2.dll
 C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\SQLitePCLRaw.nativelibrary.dll
@@ -232,3 +230,5 @@ C:\Users\haith\Documents\Projects\international-flvrs\API\obj\Debug\net5.0\API.d
 C:\Users\haith\Documents\Projects\international-flvrs\API\obj\Debug\net5.0\ref\API.dll
 C:\Users\haith\Documents\Projects\international-flvrs\API\obj\Debug\net5.0\API.pdb
 C:\Users\haith\Documents\Projects\international-flvrs\API\obj\Debug\net5.0\API.genruntimeconfig.cache
+C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Npgsql.dll
+C:\Users\haith\Documents\Projects\international-flvrs\API\bin\Debug\net5.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
