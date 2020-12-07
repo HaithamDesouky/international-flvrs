@@ -1,0 +1,199 @@
+<!-- <ngx-spinner
+  bdColor="rgba(151,149,149,0.4)"
+  size="large"
+  color="orange"
+  type="ball-clip-rotate-pulse"
+>
+  <p style="font-size: 20px; color: black">Booking Order</p>
+</ngx-spinner> -->
+
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <form [formGroup]="checkoutForm">
+      <!-- row -->
+      <div class="row">
+        <div class="col-md-7">
+          <!-- Billing Details -->
+          <div class="billing-details">
+            <div class="section-title">
+              <h3 class="title">Address</h3>
+            </div>
+
+            <div class="form-group">
+              <input
+                class="input"
+                type="text"
+                name="first-name"
+                placeholder="First Name"
+                formControlName="firstName"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="input"
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+                formControlName="lastName"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="input"
+                type="email"
+                name="email"
+                placeholder="Please enter a correct email"
+                formControlName="email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <input
+                class="input"
+                type="text"
+                name="address"
+                placeholder="Address"
+                formControlName="address"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="input"
+                type="text"
+                name="city"
+                placeholder="City"
+                formControlName="city"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="input"
+                type="text"
+                name="country"
+                placeholder="Country"
+                formControlName="country"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                required
+                class="input"
+                type="text"
+                name="zip-code"
+                placeholder="ZIP Code"
+                formControlName="zipcode"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="input"
+                type="tel"
+                name="tel"
+                placeholder="Telephone"
+                formControlName="telephone"
+                required
+              />
+            </div>
+            <div class="form-group"></div>
+          </div>
+
+          <!-- /Billing Details -->
+
+          <!-- Order notes -->
+          <div class="order-notes">
+            <textarea
+              class="input"
+              placeholder="Order Notes"
+              formControlName="orderNotes"
+            ></textarea>
+          </div>
+          <!-- /Order notes -->
+        </div>
+
+        <!-- Order Details -->
+        <div class="col-md-5 order-details">
+          <div class="section-title text-center">
+            <h3 class="title">Your Order</h3>
+          </div>
+          <div class="order-summary">
+            <div class="order-col">
+              <div><strong>PRODUCT</strong></div>
+              <div><strong>SubTotal</strong></div>
+            </div>
+            <div class="order-products">
+              <div class="order-col" *ngFor="let product of cartData">
+                <div>{{ product.quantity }}x {{ product.name }}</div>
+                <div>${{ product.subtotal }}</div>
+              </div>
+            </div>
+            <div class="order-col">
+              <div>Shipping</div>
+              <div><strong>FREE</strong></div>
+            </div>
+            <div class="order-col dropdown-divider">
+              <div><strong>TOTAL</strong></div>
+              <div>
+                <strong class="order-total">${{ cartTotal }}</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="input-checkbox">
+            <input type="checkbox" id="terms" />
+            <label for="terms">
+              <span></span>
+              I've read and accept the <a href="#">terms & conditions</a>
+            </label>
+
+            <p *ngIf="!checkoutForm.valid" style="color: red; margin-top: 10px">
+              Please fill in the form before submitting
+            </p>
+          </div>
+          <button
+            type="submit"
+            class="btn-outline-danger btn-sm my-2 btn-block"
+            [disabled]="cartTotal <= 0"
+            (click)="onSubmit()"
+            [disabled]="!checkoutForm.valid"
+          >
+            Place order
+          </button>
+
+          <div *ngIf="!checkoutForm.valid" class="error-warning">
+            <ul>
+              <li><strong>Please fill in the following fields:</strong></li>
+              <li *ngIf="checkoutForm.get('email')!['errors']">
+                - Email with a valid address
+              </li>
+              <li *ngIf="checkoutForm.get('firstName')!['errors']">
+                - First name
+              </li>
+              <li *ngIf="checkoutForm.get('lastName')!['errors']">
+                - Last name
+              </li>
+              <li *ngIf="checkoutForm.get('address')!['errors']">- Address</li>
+              <li *ngIf="checkoutForm.get('zipcode')!['errors']">- ZIP Code</li>
+            </ul>
+          </div>
+        </div>
+        <!-- /Order Details -->
+      </div>
+    </form>
+
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>
+<!-- /SECTION -->
+
+<div class="text-center my-5" *ngIf="cartData.total <= 0">
+  <h4>Your Cart Is Empty</h4>
+  <button class="btn btn-primary btn-lg mt-3" routerLink="/">GO TO SHOP</button>
+</div>

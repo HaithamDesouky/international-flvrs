@@ -1,0 +1,148 @@
+<!-- SECTION -->
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+      <!-- shop -->
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img src="./assets/img/chinese.jpg" alt="" />
+          </div>
+          <div class="shop-body">
+            <h3>Chinese<br />Collection</h3>
+            <a routerLink="/chinese" class="cta-btn"
+              >Shop now <i class="fa fa-arrow-circle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- /shop -->
+
+      <!-- shop -->
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/07/Spices_in_an_Indian_market.jpg"
+              alt=""
+            />
+          </div>
+          <div class="shop-body">
+            <h3>Indian<br />Collection</h3>
+            <a routerLink="/indian" class="cta-btn"
+              >Shop now <i class="fa fa-arrow-circle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img
+              src="https://static.wixstatic.com/media/c7baa0_6970a105a309428d8ca4c78227552839~mv2_d_2800_2240_s_2.jpg/v1/fill/w_1000,h_800,al_c,q_90,usm_0.66_1.00_0.01/c7baa0_6970a105a309428d8ca4c78227552839~mv2_d_2800_2240_s_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="shop-body">
+            <h3>Thai<br />Collection</h3>
+            <a routerLink="/thai" class="cta-btn"
+              >Shop now <i class="fa fa-arrow-circle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img
+              src="https://pinkjinn.files.wordpress.com/2019/01/spices-feature-image.jpg?w=620"
+              alt=""
+            />
+          </div>
+          <div class="shop-body">
+            <h3>Middle Eastern<br />Collection</h3>
+            <a routerLink="/arabic" class="cta-btn"
+              >Shop now <i class="fa fa-arrow-circle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img
+              src="https://istrianchef.com/wp-content/uploads/2015/06/hrana-za-srce.jpg"
+              alt=""
+            />
+          </div>
+          <div class="shop-body">
+            <h3>Mediterranean<br />Collection</h3>
+            <a routerLink="/mediterranean" class="cta-btn"
+              >Shop now <i class="fa fa-arrow-circle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xs-6">
+        <div class="shop">
+          <div class="shop-img">
+            <img
+              src="https://cdn.britannica.com/s:900x675,c:crop/43/193443-131-17ABE1C9/Union-Jack-flag-Great-Britain-united-kingdom.jpg"
+              alt=""
+            />
+          </div>
+          <div class="shop-body">
+            <h3>British<br />Collection</h3>
+            <a routerLink="/english" class="cta-btn"
+              >Shop now <i class="fa fa-arrow-circle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-title">
+          <h3 class="title">Our Products</h3>
+        </div>
+
+        <div class="sorting">
+          <strong>Sort by:</strong>
+          <select class="" (change)="onSortSelected($event)">
+            <option *ngFor="let sort of sortOptions" [value]="sort.value">
+              {{ sort.name }}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-md-12">
+          <div class="row">
+            <div
+              class="col-md-6 col-sm-6 col-lg-3"
+              *ngFor="let item of products"
+            >
+              <app-product [individualProduct]="item"></app-product>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="row"></div>
+    </div>
+  </div>
+</div>

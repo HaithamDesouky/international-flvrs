@@ -1,0 +1,31 @@
+<div class="section">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+      <!-- section title -->
+      <div class="col-md-12">
+        <div class="section-title">
+          <h3 class="title">{{ category }} Products</h3>
+          <p *ngIf="!products.length">
+            Woops, seems like we don't have it. Please try again later!
+          </p>
+        </div>
+      </div>
+      <!-- /section title -->
+
+      <!-- Products tab & slick -->
+      <div class="col-md-12">
+        <div class="row">
+          <!-- tab -->
+          <div class="col-md-4 col-sm-6" *ngFor="let p of products">
+            <app-product [individualProduct]="p"></app-product>
+          </div>
+        </div>
+      </div>
+      <!-- Products tab & slick -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+</div>

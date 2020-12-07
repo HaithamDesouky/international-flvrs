@@ -1,0 +1,80 @@
+<div class="card">
+  <div class="button-container">
+    <button
+      (click)="addToCart(individualProduct)"
+      [class.disabled]="individualProduct.stock === 0"
+      [class.button]="individualProduct.stock > 0"
+      [class.fourth]="individualProduct.stock > 0"
+    >
+      {{ individualProduct.stock < 1 ? "NO STOCK" : "Add To Cart" }}
+    </button>
+  </div>
+  <img
+    [src]="individualProduct.image"
+    alt="{{ individualProduct.name }}"
+    width="200px"
+    height="300px"
+    class="card-img-top"
+    style="cursor: pointer"
+    (click)="selectProduct(individualProduct.id)"
+  />
+</div>
+<div class="card-header">
+  <div class="card-title">
+    <h6>{{ individualProduct.name }}</h6>
+    <p class="product-description">{{ individualProduct.description }}</p>
+    <span class="lead mr-3">
+      Price:<strong> ${{ individualProduct.price }}</strong>
+    </span>
+    <span *ngIf="!individualProduct.stock">
+      <small style="color: red">Out of stock</small>
+    </span>
+  </div>
+
+  <div id="mobile-button">
+    <div class="col-md-6">
+      <button
+        (click)="addToCart(individualProduct)"
+        [class.disabled]="individualProduct.stock === 0"
+        [class.button]="individualProduct.stock > 0"
+        [class.fourth]="individualProduct.stock > 0"
+      >
+        {{ individualProduct.stock < 1 ? "NO STOCK" : "Add To Cart" }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card my-2">
+  <img
+    [src]="individualProduct.image"
+    alt="{{ individualProduct.name }}"
+    width="200px"
+    height="300px"
+    class="card-img-top"
+    style="cursor: pointer"
+    (click)="selectProduct(individualProduct.id)"
+  />
+</div>
+<div class="card-header">
+  <div class="card-title">
+    <p>{{ individualProduct.name }}</p>
+  </div>
+</div>
+<div class="card-body">
+  <h6>{{ individualProduct.description }}</h6>
+  <p class="lead">${{ individualProduct.price }}</p>
+</div>
+
+<div class="row d-flex justify-content-center border-primary my-3">
+  <div class="col-md-8">
+    <button
+      (click)="addToCart(individualProduct)"
+      [class.disabled]="individualProduct.stock === 0"
+      [class.button]="individualProduct.stock > 0"
+      [class.fourth]="individualProduct.stock > 0"
+    >
+      {{ individualProduct.stock < 1 ? "NO STOCK" : "Add To Cart" }}
+    </button>
+  </div>
+</div> -->

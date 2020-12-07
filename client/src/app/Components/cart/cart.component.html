@@ -1,0 +1,94 @@
+<div class="container">
+  <div class="text-center my-5">
+    <h4>Your Cart Is Empty</h4>
+    <button class="button fourth" routerLink="/">GO TO SHOP</button>
+  </div>
+
+  <ng-container *ngIf="cartData.length">
+    <div class="row">
+      <div class="col my-4">
+        <table class="table">
+          <thead class="table-dark">
+            <tr class="text-center">
+              <th>Image</th>
+              <th>Title</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of cartData; let i = index">
+              <td class="d-flex align-items-center justify-content-around">
+                <img
+                  [src]="product.image"
+                  alt="{{ product.name }}"
+                  height="60"
+                  class="order-1"
+                />
+                <span class="text-danger" style="cursor: pointer"
+                  ><i
+                    class="fa fa-trash"
+                    (click)="removeProductFromCart(product)"
+                  ></i
+                ></span>
+              </td>
+              <td>
+                <p>{{ product.name }}</p>
+              </td>
+              <td>
+                <p>{{ product.price }}</p>
+              </td>
+              <td>
+                <div
+                  class="value-button"
+                  id="decrease"
+                  (click)="ChangeQuantity(product, -1)"
+                >
+                  <i class="fa fa-minus"></i>
+                </div>
+                <input
+                  type="number"
+                  id="number"
+                  [value]="product.quantity"
+                  readonly
+                  [max]="product.stock"
+                />
+                <div
+                  class="value-button"
+                  id="increase"
+                  (click)="ChangeQuantity(product, 1)"
+                >
+                  <i class="fa fa-plus"></i>
+                </div>
+              </td>
+              <td>
+                <p>$ {{ product.subtotal }}</p>
+              </td>
+            </tr>
+            <tr class="border-0">
+              <td style="border: none"></td>
+              <td></td>
+              <td></td>
+              <td>TOTAL</td>
+              <td>$ {{ cartTotal }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-12 d-flex mb-5">
+        <div
+          class="d-flex w-100 justify-content-between flex-sm-column flex-md-row"
+        >
+          <a routerLink="/checkout" class="btn btn-danger btn-sm order-1"
+            >Checkout</a
+          >
+          <a routerLink="/" class="btn btn-success btn-sm order-0"
+            >Continue Shopping</a
+          >
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

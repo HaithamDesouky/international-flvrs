@@ -1,0 +1,163 @@
+.increase_quantity,
+.decrease_quantity {
+  cursor: pointer;
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.value-button {
+  display: inline-block;
+  border: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  padding: 10px 0 12px;
+  text-align: center;
+  background: #eee;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.value-button:hover {
+  cursor: pointer;
+}
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+  background: red;
+  color: white;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+  background: green;
+  color: white;
+}
+
+/* form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+} */
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+tbody {
+  tr {
+    &:not(:last-of-type) {
+      td {
+        border-right: 1px solid #dee2e6;
+
+        &:first-of-type {
+          border-left: 1px solid #dee2e6;
+        }
+      }
+    }
+
+    &:last-of-type {
+      td {
+        &:first-child {
+          border-top: 1px solid #dee2e6 !important;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5) {
+          border-left: 1px solid #dee2e6;
+          border-right: 1px solid #dee2e6;
+          border-bottom: 1px solid #dee2e6;
+          font-weight: bold;
+          font-size: 1.3rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 0.6em;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  padding: 0.5em 1.8em;
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: #340100;
+  //     border: 1px solid white;
+  //     color: white;
+  //   }
+}
+
+//Colours
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+// Basic Button Style
+.button {
+  background-color: #b39d4e;
+  border: 2px solid $red;
+  border-radius: 0.6em;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 0.5em 1.8em;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: white;
+    outline: 0;
+    border: 3px solid #b39d4e;
+  }
+}
+
+// BUTTON 4
+.fourth {
+  // background: $yellow;
+  border-color: #340100;
+  color: white;
+  background: {
+    image: linear-gradient(45deg, #340100 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
+  }
+}

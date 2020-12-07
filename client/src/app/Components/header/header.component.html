@@ -1,0 +1,180 @@
+<div id="top-header">
+  <div class="container">
+    <ul class="header-links pull-left">
+      <li>
+        <a href="#"><i class="fa fa-phone"></i> 34545345</a>
+      </li>
+      <li>
+        <a href="mailto:haithamadesouky@gmail.com"
+          ><i class="fa fa-envelope-o"></i> haithamadesouky@gmail.com</a
+        >
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-map-marker"></i> Albacete, Spain</a>
+      </li>
+    </ul>
+    <ul class="header-links pull-right">
+      <li>
+        <a href="#"><i class="fa fa-dollar"></i> USD</a>
+      </li>
+      <li>
+        <a href="#"><i class="fa fa-user-o"></i> My Account</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- /TOP HEADER -->
+
+<!-- MAIN HEADER -->
+<div id="header">
+  <!-- container -->
+  <div class="container">
+    <!-- row -->
+    <div class="row">
+      <!-- LOGO -->
+      <div class="col-md-3">
+        <div class="header-logo">
+          <a href="#" class="logo">
+            <img src="./assets/img/logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <!-- /LOGO -->
+
+      <!-- SEARCH BAR -->
+      <div class="col-md-6">
+        <div class="header-search">
+          <form [formGroup]="SearchForm" formControlName="searchInput">
+            <select class="input-select" formControlName="category">
+              <option value="">All Categories</option>
+              <option value="Chinese">Chinese</option>
+              <option value="Indian">Indian</option>
+              <option value="Thai">Thai</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Mediterranean">Mediterranean</option>
+              <option value="English">English Classic</option>
+            </select>
+            <input
+              class="input"
+              placeholder="Search here"
+              formControlName="searchValue"
+              (keyup.enter)="onSubmit()"
+            />
+            <button
+              type="button"
+              class="search-btn"
+              ng-model="searchBox"
+              (click)="onSubmit()"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- /SEARCH BAR -->
+
+      <!-- ACCOUNT -->
+      <div class="col-md-3 clearfix">
+        <div class="header-ctn">
+          <!-- Wishlist -->
+          <div>
+            <a href="#">
+              <i class="fa fa-heart-o"></i>
+              <span>Your Wishlist</span>
+              <div class="qty">0</div>
+            </a>
+          </div>
+          <!-- /Wishlist -->
+
+          <!-- Cart -->
+          <div class="dropdown">
+            <a
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              aria-expanded="true"
+            >
+              <i class="fa fa-shopping-cart"></i>
+              <span>Your Cart</span>
+              <div class="qty">{{ getCartLength() || 0 }}</div>
+            </a>
+            <div class="cart-dropdown">
+              <div class="cart-list" *ngIf="cartData">
+                <div
+                  class="product-widget"
+                  *ngFor="let product of cartData; let i = index"
+                >
+                  <div class="product-img">
+                    <img src="{{ product?.image }}" alt="" width="20px" />
+                  </div>
+                  <div class="product-body">
+                    <h3 class="product-name">
+                      <a href="#">{{ product?.name }}</a>
+                    </h3>
+                    <h4 class="product-price">
+                      <span class="qty">{{ product.quantity }} x </span>$
+                      {{ product?.price }}
+                    </h4>
+                  </div>
+                  <button
+                    class="delete"
+                    (click)="shoppingCart.removeItem(product)"
+                  >
+                    <i class="fa fa-close"></i>
+                  </button>
+                </div>
+
+                <div class="cart-summary" *ngIf="cartData">
+                  <small
+                    >{{ cartData ? cartData.length : 0 }} Item(s)
+                    selected</small
+                  >
+                  <h5>TOTAL : $ {{ shoppingCart.getTotal() }}</h5>
+                </div>
+
+                <div class="cart-summary" *ngIf="!cartData.length">
+                  <small>Seems like your cart is empty!</small>
+                </div>
+                <div class="cart-btns">
+                  <a routerLink="/cart">View Cart</a>
+                  <a *ngIf="cartData.length" routerLink="/checkout"
+                    >Checkout <i class="fa fa-arrow-circle-right"></i
+                  ></a>
+                  <a href="/" *ngIf="!cartData.length">Go to shop</a>
+                </div>
+              </div>
+            </div>
+            <!-- /Cart -->
+          </div>
+        </div>
+        <!-- /ACCOUNT -->
+      </div>
+      <!-- row -->
+    </div>
+    <!-- container -->
+  </div>
+  <!-- /MAIN HEADER -->
+  <!-- /HEADER -->
+
+  <!-- NAVIGATION -->
+  <nav id="navigation">
+    <!-- container -->
+    <div class="container">
+      <!-- responsive-nav -->
+      <div id="responsive-nav">
+        <!-- NAV -->
+        <ul class="main-nav nav py-3">
+          <li class="active"><a routerLink="/">Home</a></li>
+          <li><a routerLink="/chinese">Chinese</a></li>
+          <li><a routerLink="/indian">Indian</a></li>
+          <li><a routerLink="/thai">Thai</a></li>
+          <li><a routerLink="/english">English Classics</a></li>
+          <li><a routerLink="/arabic">Arabic</a></li>
+          <li><a routerLink="/mediterranean">Mediterranean</a></li>
+        </ul>
+        <!-- /NAV -->
+      </div>
+      <!-- /responsive-nav -->
+    </div>
+    <!-- /container -->
+  </nav>
+</div>

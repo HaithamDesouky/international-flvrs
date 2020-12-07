@@ -1,0 +1,115 @@
+.product-description {
+  height: 55px;
+}
+
+@media (max-width: 576px) {
+  .product-description {
+    height: 40px;
+  }
+}
+
+.button-container {
+  z-index: 1;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+#mobile-button {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  #mobile-button {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .button-container {
+    display: none;
+  }
+}
+
+.card:hover {
+  img {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 0.6em;
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 0.5em 1.5em;
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: #340100;
+  //     border: 1px solid white;
+  //     color: white;
+  //   }
+}
+
+//Colours
+$green: #2ecc71;
+$red: #e74c3c;
+$blue: #3498db;
+$yellow: #f1c40f;
+$purple: #8e44ad;
+$turquoise: #1abc9c;
+
+// Basic Button Style
+.button {
+  background-color: #b39d4e;
+  border: 2px solid $red;
+  border-radius: 0.6em;
+  color: white;
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    color: white;
+    outline: 0;
+    border: 2px solid #b39d4e;
+  }
+}
+
+// BUTTON 4
+.fourth {
+  // background: $yellow;
+  border-color: #340100;
+  color: white;
+  background: {
+    image: linear-gradient(45deg, #340100 50%, transparent 50%);
+    position: 100%;
+    size: 400%;
+  }
+  transition: background 300ms ease-in-out;
+
+  &:hover {
+    background-position: 0;
+  }
+}

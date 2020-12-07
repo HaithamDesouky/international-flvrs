@@ -1,0 +1,258 @@
+[
+  {
+    "id": 1,
+    "name": "Chinese Black Vinegar",
+    "description": "Crucial for Sichuan style dishes",
+    "price": 6,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71-4z7XN9BL._SL1500_.jpg",
+    "stock": 0,
+    "category": "Chinese"
+  },
+  {
+    "id": 2,
+    "name": "Soy Sauce - Lee Kum Kee",
+    "description": "Perfect as a condiment and for cooking",
+    "price": 7,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61VghrTQodL._SL1500_.jpg",
+    "stock": 4,
+    "category": "Chinese"
+  },
+  {
+    "id": 3,
+    "name": "Doubanjiang",
+    "description": "Spicy Bean paste with chili oil",
+    "price": 3,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41b7XGMlZ6L.jpg",
+    "stock": 5,
+    "category": "Chinese"
+  },
+  {
+    "id": 4,
+    "name": "Shaoxing wine",
+    "description": "Cooking wine  essential for Sichuan cuisine",
+    "price": 53,
+    "image": "https://i5.walmartimages.com/asr/de6d10e1-d31b-4c87-a390-f22106471583_1.92d43f1e5b5c698a21d2b6f82bca32e6.jpeg?odnWidth=612&odnHeight=612&odnBg=ffffff",
+    "stock": 0,
+    "category": "Chinese"
+  },
+  {
+    "id": 5,
+    "name": "Sichuan Peppercorn",
+    "description": "Rare find, perfect for spicy dishes!",
+    "price": 7,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81ecYgXjEvL._SL1500_.jpg",
+    "stock": 3,
+    "category": "Chinese"
+  },
+  {
+    "id": 6,
+    "name": "Kim´s veg noodles",
+    "description": "Can't go wrong with Kim's noodles!",
+    "price": 7,
+    "image": "https://assetscdn1.paytm.com/images/catalog/product/F/FA/FASKIM-S-VEG-NOBIG-985832D8586F43/1589635509257_0.jpg",
+    "stock": 3,
+    "category": "Chinese"
+  },
+
+  {
+    "id": 8,
+    "name": "Garam Masala",
+    "description": "Blend of exotic indian spices",
+    "price": 7,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71remHYwqwL._SX466_.jpg",
+    "stock": 3,
+    "category": "Indian"
+  },
+
+  {
+    "id": 9,
+    "name": "Fenugreek",
+    "description": "Otherwise known as Methi seeds",
+    "price": 7,
+    "image": "https://m.media-amazon.com/images/I/51TdHIngTiL.jpg",
+    "stock": 3,
+    "category": "Indian"
+  },
+
+  {
+    "id": 10,
+    "name": "Kashmiri Masala",
+    "description": "To die for!",
+    "price": 3,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81qzZiHXcWL._SY445_.jpg",
+    "stock": 3,
+    "category": "Indian"
+  },
+
+  {
+    "id": 11,
+    "name": "Ginger and Garlic Paste",
+    "description": "Makes life so much easier!",
+    "price": 9,
+    "image": "https://images-eu.ssl-images-amazon.com/images/I/41BSljSVvIL._AC_UL474_SR474,450_.jpg",
+    "stock": 2,
+    "category": "Indian"
+  },
+  {
+    "id": 12,
+    "name": "Xtra Hot Chilli Powder",
+    "description": "When hot isn't enough!",
+    "price": 2,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/91yfYAidEqL._SY550_.jpg",
+    "stock": 2,
+    "category": "Indian"
+  },
+  {
+    "id": 13,
+    "name": "Tikka Masala",
+    "description": "Classic, can't go wrong with it",
+    "price": 9,
+    "image": "https://i5.walmartimages.com/asr/abb26bc5-9cb2-456f-b914-aadba0f7791b_1.394b266c432334d21dedf679dad0b795.jpeg",
+    "stock": 2,
+    "category": "Indian"
+  },
+  {
+    "id": 14,
+    "name": "Green Curry Paste",
+    "description": "Amazing value for a great dish",
+    "price": 4,
+    "image": "https://cdn.shopify.com/s/files/1/0076/4339/8233/products/maeploy-green-curry-paste-400g_370x.jpg?v=1590598060",
+    "stock": 0,
+    "category": "Thai"
+  },
+  {
+    "id": 15,
+    "name": "Thai Oyster Sauce",
+    "description": "Sweet and delicious",
+    "price": 9,
+    "image": "https://cdn.shopify.com/s/files/1/0076/4339/8233/products/maekrua-oyster-sauce-300ml_370x.jpg?v=1560260630",
+    "stock": 6,
+    "category": "Thai"
+  },
+  {
+    "id": 16,
+    "name": "Thai Fish Sauce",
+    "description": "Strong but oh so delicious!",
+    "price": 5,
+    "image": "https://cdn.shopify.com/s/files/1/0076/4339/8233/products/squid-fish-sauce-300ml_370x.jpg?v=1560261381",
+    "stock": 2,
+    "category": "Thai"
+  },
+  {
+    "id": 17,
+    "name": "Thai Red Curry",
+    "description": "Yummy!",
+    "price": 9,
+    "image": "https://cdn.shopify.com/s/files/1/0076/4339/8233/products/aromax-red-curry-set_370x.jpg?v=1556796723",
+    "stock": 2,
+    "category": "Thai"
+  },
+  {
+    "id": 18,
+    "name": "Walkers Crisps",
+    "description": "Can never go wrong with classics",
+    "price": 9,
+    "image": "https://cdn11.bigcommerce.com/s-kbm52d/images/stencil/1280x1280/products/764/3182/352__85346.1434808738.jpg?c=2",
+    "stock": 10,
+    "category": "English"
+  },
+  {
+    "id": 19,
+    "name": "Jammie Dodgers",
+    "description": "Everyone remembers the commercial!",
+    "price": 2,
+    "image": "https://cdn.shopify.com/s/files/1/0943/7472/products/Jammie_Dodgers_512x.jpg?v=1581007795",
+    "stock": 2,
+    "category": "English"
+  },
+  {
+    "id": 20,
+    "name": "Yorkshire Tea",
+    "description": "Stockup for winter!",
+    "price": 9,
+    "image": "https://cdn.shopify.com/s/files/1/0943/7472/products/tea_66af0e2d-b96a-4115-a027-cb549f8c0f28_512x.jpg?v=1580477424",
+    "stock": 2,
+    "category": "English"
+  },
+  {
+    "id": 21,
+    "name": "PG Tips",
+    "description": "Tea for those with good taste.",
+    "price": 9,
+    "image": "https://cdn.shopify.com/s/files/1/0943/7472/products/tea_512x.jpg?v=1579878831",
+    "stock": 2,
+    "category": "English"
+  },
+  {
+    "id": 22,
+    "name": "Readybrek",
+    "description": "Porridge. Need I say more?",
+    "price": 4,
+    "image": "https://cdn.shopify.com/s/files/1/0943/7472/products/ready_brek_2_x700.jpg?v=1579017899",
+    "stock": 2,
+    "category": "English"
+  },
+  {
+    "id": 23,
+    "name": "Cocopops",
+    "description": "Yummy chocolate cereal!",
+    "price": 2,
+    "image": "https://www.thewarehouse.co.nz/on/demandware.static/-/Sites-twl-master-catalog/default/dw3f0847a4/05/e1/R1914885_41.jpg",
+    "stock": 2,
+    "category": "English"
+  },
+  {
+    "id": 24,
+    "name": "El Arosa Team",
+    "description": "Classic Arabic Tea",
+    "price": 6,
+    "image": "https://images-na.ssl-images-amazon.com/images/I/81ZNMxuPfoL._AC_SX466_.jpg",
+    "stock": 2,
+    "category": "Arabic"
+  },
+  {
+    "id": 26,
+    "name": "Kofta Spices",
+    "description": "Easy mix for delicious kofta",
+    "price": 2,
+    "image": "https://www.ecklee.co.uk/prodimg/abdkftspc_1_Zoom.jpg",
+    "stock": 2,
+    "category": "Arabic"
+  },
+  {
+    "id": 27,
+    "name": "Egyptian Fava Beans",
+    "description": "Wholesome perfect for ramadan!",
+    "price": 2,
+    "image": "https://www.ecklee.co.uk/prodimg/calgaregyrec_1_Zoom.jpg",
+    "stock": 2,
+    "category": "Arabic"
+  },
+  {
+    "id": 28,
+    "name": "Maggi Chicken Soup",
+    "description": "Traditional soup in Egypt",
+    "price": 2,
+    "image": "https://www.ecklee.co.uk/prodimg/mgcknndlsp_1_Zoom.jpg",
+    "stock": 2,
+    "category": "Arabic"
+  },
+  {
+    "id": 29,
+    "name": "Pickled Chilli",
+    "description": "Yummy!",
+    "price": 7,
+    "image": "https://www.ecklee.co.uk/prodimg/Acpio_1_Zoom.jpg",
+    "stock": 4,
+    "category": "Arabic"
+  },
+  {
+    "id": 30,
+    "name": "Ras El Hanout",
+    "description": "Popular Arabic blend of spices.",
+    "price": 3,
+    "image": "https://www.ecklee.co.uk/prodimg/gfsRsAlHant_1_Zoom.jpg",
+    "stock": 4,
+    "category": "Arabic"
+  }
+]
